@@ -15,35 +15,49 @@ require("Lahman")
 
 ##  Scatter Plot
 
-Data can be visualized from a data table to show two continuous numerical variables as a scatter plot such in the graph below. The x-axis shows `displ`, the size of a car’s engine in liters and the y-axis shows `hwy` in miles per gallon (mpg) to indicate each car’s fuel efficiency on the highway. The graph also shows the classification of the vehicle by `class`, indicated by color and shape.
+Data can be visualized from a data table to show two continuous numerical variables as a scatter plot such in the graph below. The x-axis shows `displ`, the size of a car’s engine in liters and the y-axis shows `hwy` in miles per gallon (mpg) to indicate each car’s fuel efficiency on the highway. The graph also shows the classification of the vehicle by `class`, indicated by color.
 
 ```{r scatter plot, echo = FALSE}
 
 ggplot(data = mpg, mapping = aes()) +
   geom_point(mapping = aes())+
-  geom_smooth()
+  geom_smooth() +
+  ggtitle("Miles per gallon on the highway for vehichles with different size engines")
 
 ```
 
-The graph displays a trend of smaller classes of cars tend to have better gas millage. 
+The graph displays a trend of smaller classes of cars tend to have better gas mileage. 
+
+## Facet of scatter plot
+
+This graph can also show the trends among different cylinders of cars. 
+
+```{r faceted scatter plot, echo = FALSE}
+
+ggplot(data = mpg, mapping = aes()) +
+  geom_point(mapping = aes())+
+  geom_smooth() +
+  ggtitle("Miles per gallon on the highway for vehichles with different size engines by year")
+
+```
 
 ## Bar Plot
 
-In addition to viewing data as a scatter plot, you can also visualize categorical data by counts or relative percentages.  
+In addition to viewing data as a scatter plot, you can also visualize categorical data by counts or relative percentages. For instance in the plot below we can show the distribution of diamonds by the category of cut, and the category of clarity. 
 
 ```{r bar plot, echo = FALSE}
 
 ggplot(data = diamonds) + 
-  geom_bar(mapping = aes(x = cut, fill = clarity), position = "fill")
+  geom_bar(mapping = aes(x = cut, fill = clarity))+ 
+  ggtitle("Diamonds displayed by cut and clarity")
 
 ```
 
 ## Box plot
 
-You can also embed plots, for example:
+Often time you have several dimensions in your data and need to compare the distribution of a variable across different states of a category. 
 
 ```{r box plot,  echo = FALSE}
-
+ggplot(data = mpg, mapping = aes()) + 
+  geom_boxplot()
 ```
-
-
