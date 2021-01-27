@@ -22,7 +22,7 @@ Data can be visualized from a data table to show two continuous numerical variab
 ggplot(data = mpg, mapping = aes()) +
   geom_point(mapping = aes())+
   geom_smooth() +
-  ggtitle("Miles per gallon on the highway for vehichles with different size engines")
+  ggtitle("Miles per gallon on the highway for vehicles with different size engines")
 
 ```
 
@@ -37,7 +37,7 @@ The scatter plot can also show the trends among different years of vehicles. The
 ggplot(data = mpg, mapping = aes()) +
   geom_point(mapping = aes())+
   geom_smooth() +
-  ggtitle("Miles per gallon on the highway for vehichles with different size engines by year")
+  ggtitle("Miles per gallon on the highway for vehicles with different size engines by year")
 
 ```
 
@@ -60,5 +60,5 @@ Often time you have several dimensions in your data and need to compare the dist
 ```{r box plot,  echo = FALSE}
 ggplot(data = mpg, mapping = aes()) + 
   geom_boxplot() + 
-  ggtitle("Miles per gallon (hwy) for different vehicles classes")
+  ggtitle("Miles per gallon (hwy) for different vehicle classes")
 ```
