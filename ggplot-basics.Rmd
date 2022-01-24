@@ -24,7 +24,7 @@ The graph also shows the classification of the vehicle by `class`, indicated by 
 ggplot(data = mpg, mapping = aes()) +
   geom_point(mapping = aes())+
   geom_smooth() +
-  ggtitle("Miles per gallon on the highway for vehichles with different size engines")
+  ggtitle("Miles per gallon on the highway for vehicles with different size engines")
 
 ```
 
@@ -40,7 +40,7 @@ The `mpg` data set contains two sets of years.
 ggplot(data = mpg, mapping = aes()) +
   geom_point(mapping = aes())+
   geom_smooth() +
-  ggtitle("Miles per gallon on the highway for vehichles with different size engines by year")
+  ggtitle("Miles per gallon on the highway for vehicles with different size engines by year")
 
 ```
 
@@ -64,5 +64,5 @@ Often time you have several dimensions in your data and need to compare the dist
 ```{r box plot,  echo = FALSE}
 ggplot(data = mpg, mapping = aes()) + 
   geom_boxplot() + 
-  ggtitle("Miles per gallon (hwy) for different vehicles classes")
+  ggtitle("Miles per gallon (hwy) for different vehicle classes")
 ```

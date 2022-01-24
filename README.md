@@ -41,7 +41,7 @@ The last argument is the `geom_smooth()` which should make the trend line, a sin
 Modify the *faceted scatter plot* chunk to show the trend across the two different years shown in the data. 
 To do this, copy your working code and then add a new function such as `facet_grid()` or `facet_wrap()` as shown in [section 3.5]( https://r4ds.had.co.nz/data-visualisation.html#facets)
 
-### Bar plots
+### Bar plots and position
 
 Next read [sections 3.7](https://r4ds.had.co.nz/data-visualisation.html#statistical-transformations) and [3.8](https://r4ds.had.co.nz/data-visualisation.html#position-adjustments) and use the `position` argument of the `geom_bar()` function to modify the current graph in the *bar plot* chunk into either a stacked bar graph with `fill` or a distribution bar graph with `dodge`.
 
