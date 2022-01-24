@@ -1,21 +1,23 @@
 ---
 title: "Overview of basic features of ggplot"
 author: "Caleb Trujillo"
-date: "1/17/2021"
+date: "1/23/2022"
 output: html_document
 ---
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
-require("tidyverse")
-require("nycflights13")
-require("gapminder")
-require("Lahman")
+if (!require("tidyverse")) install.packages("tidyverse")
+if (!require("nycflights13")) install.packages("nycflights13")
+if (!require("gapminder")) install.packages("gapminder")
+if (!require("Lahman")) install.packages("Lahman")
 ```
 
 ##  Scatter plot and aesthetics
 
-Data can be visualized from a data table to show two continuous numerical variables as a scatter plot such in the graph below. The x-axis shows `displ`, the size of a car’s engine in liters and the y-axis shows `hwy` in miles per gallon (mpg) to indicate each car’s fuel efficiency on the highway. The graph also shows the classification of the vehicle by `class`, indicated by color.
+Data can be visualized from a data table to show two continuous numerical variables as a scatter plot such in the graph below. 
+The x-axis shows `displ`, the size of a car’s engine in liters and the y-axis shows `hwy` in miles per gallon (mpg) to indicate each car’s fuel efficiency on the highway. 
+The graph also shows the classification of the vehicle by `class`, indicated by color.
 
 ```{r scatter plot, echo = FALSE}
 
@@ -30,7 +32,8 @@ The graph displays a trend of smaller classes of cars tend to have better gas mi
 
 ## Facets of scatter plot
 
-The scatter plot can also show the trends among different years of vehicles. The `mpg` data set contains two sets of years. 
+The scatter plot can also show the trends among different years of vehicles.
+The `mpg` data set contains two sets of years. 
 
 ```{r faceted scatter plot, echo = FALSE}
 
@@ -43,7 +46,8 @@ ggplot(data = mpg, mapping = aes()) +
 
 ## Bar plot position
 
-In addition to viewing data as a scatter plot, you can also visualize categorical data by counts or relative percentages. For instance in the plot below we can show the distribution of diamonds by the category of cut, and the category of clarity. 
+In addition to viewing data as a scatter plot, you can also visualize categorical data by counts or relative percentages. 
+For instance in the plot below we can show the distribution of diamonds by the category of cut, and the category of clarity. 
 
 ```{r bar plot, echo = FALSE}
 
