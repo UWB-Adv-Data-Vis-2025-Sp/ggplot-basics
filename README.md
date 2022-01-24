@@ -3,7 +3,7 @@ Basic graphs in ggplot.
 
 For this assignment you will complete code to build commonly encountered plots including scatter plots, facets, column plots, and box plots.
 
-Before beginning the assignment, read the following chapters from https://r4ds.had.co.nz/index.html:
+Before beginning the assignment, read the following chapters from [R for Data Science](https://r4ds.had.co.nz/index.html):
 
 0. Welcome
 1. [Introduction](https://r4ds.had.co.nz/introduction.html)
