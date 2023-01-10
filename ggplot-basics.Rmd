@@ -1,7 +1,7 @@
 ---
 title: "Overview of basic features of ggplot"
 author: "Caleb Trujillo"
-date: "1/23/2022"
+date: "`r Sys.Date()`"
 output: html_document
 ---
 
@@ -13,56 +13,29 @@ if (!require("gapminder")) install.packages("gapminder")
 if (!require("Lahman")) install.packages("Lahman")
 ```
 
-##  Scatter plot and aesthetics
+### Figure 3.13
 
-Data can be visualized from a data table to show two continuous numerical variables as a scatter plot such in the graph below. 
-The x-axis shows `displ`, the size of a car’s engine in liters and the y-axis shows `hwy` in miles per gallon (mpg) to indicate each car’s fuel efficiency on the highway. 
-The graph also shows the classification of the vehicle by `class`, indicated by color.
+Here you will make your figure. You can write a commit for each figure or error leading up to the figure that matches. Be sure to include commits of the transitions and name the figures such as "Recreating Figure 3.4" and "Recreating Figure 3.7". Practicing frequent commits is a great habit.
 
-```{r scatter plot, echo = FALSE}
+```{r 3.13 plot}
 
-ggplot(data = mpg, mapping = aes()) +
-  geom_point(mapping = aes())+
-  geom_smooth() +
-  ggtitle("Miles per gallon on the highway for vehicles with different size engines")
+p <- ggplot(data = gapminder,
+            mapping = aes(x = gdpPercap,
+                          y = lifeExp))
+p + geom_point() 
 
 ```
 
-The graph displays a trend of smaller classes of cars tend to have better gas mileage. 
+### Figure 3.16
+ 
+Here you will make your next figure.
 
-## Facets of scatter plot
-
-The scatter plot can also show the trends among different years of vehicles.
-The `mpg` data set contains two sets of years. 
-
-```{r faceted scatter plot, echo = FALSE}
-
-ggplot(data = mpg, mapping = aes()) +
-  geom_point(mapping = aes())+
-  geom_smooth() +
-  ggtitle("Miles per gallon on the highway for vehicles with different size engines by year")
-
+```{r 3.16 plot}
+p <- ggplot(data = gapminder,
+            mapping = aes(x = gdpPercap,
+                          y = lifeExp,
+                          color = continent,
+                          fill = lifeExp))
+p + geom_smooth()
 ```
 
-## Bar plot position
-
-In addition to viewing data as a scatter plot, you can also visualize categorical data by counts or relative percentages. 
-For instance in the plot below we can show the distribution of diamonds by the category of cut, and the category of clarity. 
-
-```{r bar plot, echo = FALSE}
-
-ggplot(data = diamonds) + 
-  geom_bar(mapping = aes(x = cut, fill = clarity))+ 
-  ggtitle("Diamonds displayed by cut and clarity")
-
-```
-
-## Box and whisker plot and flipped coordinates
-
-Often time you have several dimensions in your data and need to compare the distribution of a variable across different states of a category. 
-
-```{r box plot,  echo = FALSE}
-ggplot(data = mpg, mapping = aes()) + 
-  geom_boxplot() + 
-  ggtitle("Miles per gallon (hwy) for different vehicle classes")
-```
