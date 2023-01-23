@@ -35,7 +35,19 @@ As you work on the figures, you can follow along with a previous tutorial for th
 [![IMAGE ALT TEXT HERE](http://img.youtube.com/vi/n4q6pcFSqy0/0.jpg)](http://www.youtube.com/watch?v=n4q6pcFSqy0)
 
 As you complete each figure used to build the main visuals, write a commit message. 
-There should be commits for the following states: 3.6, 3.7, 3.8, 3.9, 3.13, 3.14, 3.15, 3.16.
+There should be commits for the following states being made in figure 3.13 chunk: 
+
+-3.6
+-3.7
+-3.8
+-3.9 
+-3.13
+
+There should be commits for the following states being made in the figure 3.16 chunk: 
+
+-3.14
+-3.15
+-3.16
 
 When you are finished, knit to Html, commit, push the code to GitHub and complete the assignment by submitting a pull request for feedback and paste the URL to the repo in Canvas. Once the URL us submitted, I will know it is safe to grade your work.
 
