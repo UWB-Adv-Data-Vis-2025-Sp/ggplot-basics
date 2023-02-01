@@ -1,7 +1,7 @@
 # ggplot-basics
 Basic graphs in ggplot.
 
-For this assignment, you will create graphs using ggplot by coding in R to build scatter plots!
+For this assignment, you will create graphs using ggplot functions by coding in R! We will start with scatterplots by specifying two quantitative variables for the x- and y- axes.
 
 Learning objectives:
 
@@ -9,6 +9,7 @@ Learning objectives:
 - Manage project development to store, organize, and track code using digital collaboration tools for reproducibility.
 
 ## Preparation
+
 Before beginning the assignment, read the following chapters from [Data Visualization](https://socviz.co/index.html#preface):
 
 1. [Look at data](https://socviz.co/lookatdata.html#lookatdata)
@@ -21,19 +22,32 @@ Do not copy code from the book, rather try to write each line with the appropria
 
 ## Task
 
-Make an RMarkdown with your name as the author, that recreates the images and then knit it as an HTML file to upload it on Canvas as an attachment.
+Make an RMarkdown that recreates the images and then knit it as an HTML file to upload it on Canvas as an attachment.
 
+Replace the author name
 Recreate the following figures:
 
 - Figure 3.13
 - Figure 3.16
 
-As you work on the figures, you can follow along with a previous tutorial for this chapter, but you this video doesn't cover git commits or submission for this assignment.
+As you work on the figures, you can follow along with a previous tutorial for this chapter, but this video doesn't include the git commits you should be completing. Be sure to submit this assignment as instructed below.
 
 [![IMAGE ALT TEXT HERE](http://img.youtube.com/vi/n4q6pcFSqy0/0.jpg)](http://www.youtube.com/watch?v=n4q6pcFSqy0)
 
 As you complete each figure used to build the main visuals, write a commit message. 
-There should be commits for the following states: 3.6, 3.7, 3.8, 3.9, 3.13, 3.14, 3.15, 3.16.
+There should be commits for the following states being made in figure 3.13 chunk: 
+
+-3.6
+-3.7
+-3.8
+-3.9 
+-3.13
+
+There should be commits for the following states being made in the figure 3.16 chunk: 
+
+-3.14
+-3.15
+-3.16
 
 When you are finished, knit to Html, commit, push the code to GitHub and complete the assignment by submitting a pull request for feedback and paste the URL to the repo in Canvas. Once the URL us submitted, I will know it is safe to grade your work.
 
