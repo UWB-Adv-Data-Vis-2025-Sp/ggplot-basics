@@ -59,17 +59,17 @@ Update the author's name and the date in the *YAML* section.
 
 ### Set up
 
-In your source chunk, you'll want to load the following packages.
+In your source chunk, you'll want to load the following packages using the pacman function p_load.
 
 ```
-if (!require("tidyverse")) install.packages("tidyverse")
-if (!require("socviz")) install.packages("socviz")
-if (!require("gapminder")) install.packages("gapminder")
+{r setup, include=FALSE}
+pacman::p_load(tidyverse,nycflights13,gapminder,socviz)
 ```
 
 If you are getting errors because these packages cannot be found, use the following codes in the console:
 
 ```
+install.packages("pacman"")
 install.packages("tidyverse")
 install.packages("socviz")
 install.packages("gapminder")
