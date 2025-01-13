@@ -1,12 +1,13 @@
 # ggplot-basics
 Basic graphs in ggplot.
 
-For this assignment, you will create graphs using ggplot functions by coding in R! We will start with scatterplots by specifying two quantitative variables for the x- and y- axes.
+For this R assignment, you will create graphs using ggplot functions by coding in R! We will start with scatterplots by specifying two quantitative variables for the x- and y- axes. Before beginning, accept the assignment, pull your assignment repo from GitHub into RStudio using the New Project > Version Control and then paste the appropriate URL. Considering that you face challenges when using your personal computer, you may complete the assignment with JupyterHub without tracking in Git with the expectation you ask for help to resolve the issues.
 
 Learning objectives:
 
-- Be capable of running, modifying, and sharing scripts to accomplish analyze data and visualize in at least one scripting language.
+- Be capable of running, modifying, and sharing scripts to analyze data and visualize in at least one scripting language.
 - Manage project development to store, organize, and track code using digital collaboration tools for reproducibility.
+- Create an original data visualization using the grammar of the graphic.
 
 ## Preparation
 
@@ -16,15 +17,15 @@ Before beginning the assignment, read the following chapters from [Data Visualiz
 2. [Get started](https://socviz.co/gettingstarted.html#gettingstarted)
 3. [Make a plot](https://socviz.co/makeplot.html)
 
-For this assignment, complete the task for each of the sections. You'll want to first make sure you have installed the required packages that are in the setup chunk. As you update your code to create ggplots, you can run individual chunks using the green play button in the upper right corner of the chunk. This helps you see the products of your code before knitting the full document.
+For this assignment, complete the task for each of the sections. You'll want first to make sure you've installed the packages in the setup chunk. As you update your code to create ggplots, you can run individual chunks using the green play button in the upper right corner of the chunk. This helps you see the products of your code before knitting the full document.
 
-Do not copy code from the book, rather try to write each line with the appropriate arguments. Keep in mind that ggplot builds each element of the visualization in layers.
+Do not copy code from the book or instructions; try to write each line with the appropriate arguments. This way, you will know that ggplot builds each element of the visualization in layers.
 
 ## Task
 
-Make an RMarkdown that recreates the images and then knit it as an HTML file to upload it on Canvas as an attachment.
+Make an RMarkdown that recreates the images and then knit it as an HTML file to upload to Canvas as an attachment.
 
-Replace the author name
+Replace the author's name.
 Recreate the following figures:
 
 - Figure 3.13
@@ -34,8 +35,8 @@ As you work on the figures, you can follow along with a previous tutorial for th
 
 [![IMAGE ALT TEXT HERE](http://img.youtube.com/vi/n4q6pcFSqy0/0.jpg)](http://www.youtube.com/watch?v=n4q6pcFSqy0)
 
-As you complete each figure used to build the main visuals, write a commit message. 
-There should be commits for the following states being made in figure 3.13 chunk: 
+Write a commit message as you complete each figure used to build the main visuals. 
+There should be commits for the following states being made in Figure 3.13 chunk: 
 
 - 3.6
 - 3.7
@@ -43,13 +44,14 @@ There should be commits for the following states being made in figure 3.13 chunk
 - 3.9 
 - 3.13
 
-There should be commits for the following states being made in the figure 3.16 chunk: 
+There should be commits for the following states being made in the Figure 3.16 chunk: 
 
 - 3.14
 - 3.15
 - 3.16
+- Original graph
 
-When you are finished, knit to Html, commit, push the code to GitHub and complete the assignment by submitting a pull request for feedback and paste the URL to the repo in Canvas. Once the URL us submitted, I will know it is safe to grade your work.
+When you are finished, knit to HTML, commit, push the code to GitHub, and complete the assignment by submitting a pull request for feedback and pasting the URL to the repo in Canvas. Once the URL is submitted, I will know it is safe to grade your work.
 
 ## Sections
 
@@ -59,7 +61,7 @@ Update the author's name and the date in the *YAML* section.
 
 ### Set up
 
-In your source chunk, you'll want to load the following packages using the pacman function p_load.
+In your source chunk, you'll want to load the following packages using the *pacman* function p_load.
 
 ```
 {r setup, include=FALSE}
@@ -77,8 +79,17 @@ install.packages("gapminder")
 
 ### Figure 3.13
 
-Here you will make your figure. You can write a commit for each figure or error leading up to the figure that matches. Be sure to include commits of the transitions and name the figures such as "Recreating Figure 3.4" and "Recreating Figure 3.7". Practicing frequent commits is a great habit.
+Here, you will make your figure. You can write a commit for each figure or error leading up to the figure that matches. Be sure to include commits of the transitions and name the figures, such as "Recreating Figure 3.4" and "Recreating Figure 3.7". Practicing frequent commits is a great habit.
 
 ### Figure 3.16
  
-Here you will make your figure. Continue to write a commit for the figures or errors. 
+Here, you will make your figure. Continue to write a commit for the figures. 
+
+### Orignal graph
+Continue practicing by accessing an unfamiliar data set from another package.
+You can load a dataset of your choice to show you can build a graphic using ggplot layers.
+Here are some sample data sets 
+[https://stat.ethz.ch/R-manual/R-devel/library/datasets/html/00Index.html](https://stat.ethz.ch/R-manual/R-devel/library/datasets/html/00Index.html)
+
+
+
