@@ -1,13 +1,13 @@
 # ggplot-basics
 Basic graphs in ggplot.
 
-For this R assignment, you will create graphs using ggplot functions by coding in R! We will start with scatterplots by specifying two quantitative variables for the x- and y- axes. Before beginning, accept the assignment, pull your assignment repo from GitHub into RStudio using the New Project > Version Control and then paste the appropriate URL. Considering that you face challenges when using your personal computer, you may complete the assignment with JupyterHub without tracking in Git with the expectation you ask for help to resolve the issues.
+For this R assignment, you will create graphs using ggplot functions by coding in R! We will start with scatterplots by specifying two quantitative variables for the x- and y-axis. Before beginning, accept the assignment, pull your assignment repo from GitHub into RStudio using the New Project > Version Control, and then paste the appropriate URL. Considering that you face challenges when using your personal computer, you may complete the assignment with JupyterHub without tracking in Git with the expectation you ask for help to resolve the issues.
 
 Learning objectives:
 
 - Be capable of running, modifying, and sharing scripts to analyze data and visualize in at least one scripting language.
 - Manage project development to store, organize, and track code using digital collaboration tools for reproducibility.
-- Create an original data visualization using the grammar of the graphic.
+- Create an original data visualization using the grammar of graphic.
 
 ## Preparation
 
@@ -68,13 +68,19 @@ In your source chunk, you'll want to load the following packages using the *pacm
 pacman::p_load(tidyverse,nycflights13,gapminder,socviz)
 ```
 
-If you are getting errors because these packages cannot be found, use the following codes in the console:
+If you are getting errors because these packages cannot be found, use the following codes in the *console*, not the script you:
 
-```
-install.packages("pacman"")
-install.packages("tidyverse")
-install.packages("socviz")
-install.packages("gapminder")
+Console:
+
+- `install.packages("pacman")`
+
+- `install.packages("tidyverse")`
+
+- `install.packages("socviz")`
+
+- `install.packages("gapminder")`
+
+- `install.packages("shiny")`
 ```
 
 ### Figure 3.13
