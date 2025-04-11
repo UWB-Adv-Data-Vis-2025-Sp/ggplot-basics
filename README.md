@@ -51,7 +51,7 @@ There should be commits for the following states being made in the Figure 3.16 c
 - 3.16
 - Original graph
 
-When you are finished, knit to HTML, commit, push the code to GitHub, and complete the assignment by submitting a pull request for feedback and pasting the URL to the repo in Canvas. Once the URL is submitted, I will know it is safe to grade your work.
+When you are finished, knit to HTML, commit, push the code and the knitted file to your GitHub repo, and complete the assignment by pasting the URL to your the repo on Canvas assignment page. Once the URL is submitted, I will know it is safe to grade your work.
 
 ## Sections
 
