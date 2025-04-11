@@ -49,7 +49,6 @@ There should be commits for the following states being made in the Figure 3.16 c
 - 3.14
 - 3.15
 - 3.16
-- Original graph
 
 When you are finished, knit to HTML, commit, push the code and the knitted file to your GitHub repo, and complete the assignment by pasting the URL to your the repo on Canvas assignment page. Once the URL is submitted, I will know it is safe to grade your work.
 
@@ -90,12 +89,3 @@ Here, you will make your figure. You can write a commit for each figure or error
 ### Figure 3.16
  
 Here, you will make your figure. Continue to write a commit for the figures. 
-
-### Orignal graph
-Continue practicing by accessing an unfamiliar data set from another package.
-You can load a dataset of your choice to show you can build a graphic using ggplot layers.
-Here are some sample data sets 
-[https://stat.ethz.ch/R-manual/R-devel/library/datasets/html/00Index.html](https://stat.ethz.ch/R-manual/R-devel/library/datasets/html/00Index.html)
-
-
-
